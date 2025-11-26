@@ -1,0 +1,278 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: 100%;
+    
+}
+
+/* Navigation */
+.main-content{
+    background-image: url('Success-small-bg.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 5px 10px 0px;
+}
+ul{
+    display: none;
+    flex-wrap: nowrap;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: #007bff;
+    padding-left: 10px;
+}
+.mobile-menu{
+    color: #007bff;
+}
+
+/* About section */
+.about-intro {
+    text-align: center;
+    color: #fff;
+    padding: 0px 0;
+}
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-intro h2{
+    font-size: 20px;
+}
+.about-intro p{
+    font-size: 12px;
+}
+
+.Whatsapp-btn{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000000;
+    color: #007bff;
+    margin: 20px auto;
+    width: 180px;
+
+}
+.fa-whatsapp{
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7px 7px;
+    color: white;
+    margin-left: 10px;
+    background-color: #25D366;
+}
+
+.about-section{
+
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+.about-box{
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #ddf0ff76;
+    color: rgba(0, 0, 0, 0.582);
+    width: 70%;
+    height: 60vh;
+    line-height: 15px;
+    text-align: justify;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.illustration-image img{
+    width: 90%;
+    border-radius: 20px;
+    margin: 10px auto;
+
+}
+.illustration-image{
+    text-align: center;
+}
+.skills-image{
+   width: 90%;
+   margin: 0 auto;
+}
+.about-box h2{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.about-box p{
+    margin-top: 10px;
+    font-size: 12px;
+    overflow-wrap: inherit;
+}
+.about-text-container h2{
+    font-size: 18px;
+}
+.about-text-container p{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/*
+.resume Section */
+
+.resume-btn{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 40px ;
+}
+.resume-btn a{
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    width: 120px;
+}
+.system-image{
+    text-align: center;
+}
+.system-image img{
+    width: 40%;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+/* Hero Section*/
+
+.skills-image img{
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.skill-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+.skills-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.skill-item{
+    background-image: url(Success-small-bg.jpg);
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.carousel-container{
+  margin: 40px auto;
+  overflow: hidden;
+width: 80%;
+}
+.carousel-track{
+ width: max-content;
+ display: flex;
+ justify-content: center;
+ margin: auto;
+animation: scroll 10s linear infinite;
+ 
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.card{
+  width: 50px;
+  flex: 0 0 auto;
+}
+
+.footer-container{
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    color: #007bff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    padding-top: 30px;
+    margin: 0;
+}
+.footer-container p{
+    font-size: 12px;
+    margin: 10px 0;
+}
+.social-icons {
+    margin: 30px auto;
+    text-decoration: none;
+}
+/* @media Screen */
+
+@media screen and (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+        float: right;
+    }
+    ul{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 850px){
+    .about-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 70%;
+        }
+        .about-box{
+        width: 45%;
+        }
+
+.about-box{
+    width: 30%;
+    border-radius: 20px;
+    padding: 15px;
+    height: 55vh;
+}
+}
